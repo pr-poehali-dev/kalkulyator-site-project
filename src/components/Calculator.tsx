@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { X, Divide, Minus, Plus, Equals, Delete } from "lucide-react";
+import { X, Divide, Minus, Plus, Equal, Delete } from "lucide-react";
 
 const Calculator = () => {
   const [display, setDisplay] = useState("0");
@@ -103,7 +103,7 @@ const Calculator = () => {
         <Button variant="outline" onClick={() => inputDigit("0")} className="col-span-2">0</Button>
         <Button variant="outline" onClick={() => inputDot()}>.</Button>
         <Button variant="default" onClick={() => performOperation("=")} className="bg-primary text-primary-foreground">
-          <Equals className="h-4 w-4" />
+          <Equal className="h-4 w-4" />
         </Button>
       </div>
     </div>
